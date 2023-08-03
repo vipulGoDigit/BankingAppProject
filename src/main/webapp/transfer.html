@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transfer amount</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    color: #004080;
+    padding: 20px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    color: #333333;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+
+  input[type="submit"] {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #00264d;
+  }
+</style>
+</head>
+<body>
+  <h1>Please fill the transfer details</h1>
+  <form action="Transfer" method="post">
+    <ol>
+      <li>
+        <label for="cust_id">Customer ID</label>
+        <input type="text" name="cust_id" id="cust_id">
+      </li>
+
+      <li>
+        <label for="bank_name">Bank Name</label>
+        <input type="text" name="bank_name" id="bank_name">
+      </li>
+
+      <li>
+        <label for="ifsc">IFSC Code</label>
+        <input type="text" name="ifsc" id="ifsc">
+      </li>
+
+      <li>
+        <label for="sender_accno">Sender Account Number</label>
+        <input type="text" name="sender_accno" id="sender_accno">
+      </li>
+
+      <li>
+        <label for="receiver_ifsc">Receiver IFSC Code</label>
+        <input type="text" name="receiver_ifsc" id="receiver_ifsc">
+      </li>
+
+      <li>
+        <label for="receiver_accno">Receiver Account Number</label>
+        <input type="text" name="Receiver_accno" id="receiver_accno">
+      </li>
+
+      <li>
+        <label for="amount">Amount</label>
+        <input type="text" name="amount" id="amount">
+      </li>
+
+      <li>
+        <label for="pin">Pin</label>
+        <input type="password" name="pin" id="pin">
+      </li>
+
+      <li>
+        <input type="submit" value="Transfer Amount">
+      </li>
+    </ol>
+  </form>
+</body>
+</html>

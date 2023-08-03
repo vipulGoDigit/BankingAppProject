@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Change Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #00264d;
+    }
+  </style>
+</head>
+<body>
+  <form action="changePin" method="post">
+    <label for="pin">Old Pin</label>
+    <input type="password" name="pin" id="pin">
+    <br><br>
+    <label for="New_Pin">New Pin</label>
+    <input type="password" name="New_Pin" id="New_Pin">
+    <br><br>
+    <label for="Confirm_Pin">Confirm Pin</label>
+    <input type="password" name="Confirm_Pin" id="Confirm_Pin">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
